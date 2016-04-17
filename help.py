@@ -1,5 +1,6 @@
 import operator
 import numpy as np
+import en
 from matplotlib import pyplot as plt
 import string
 
@@ -89,10 +90,16 @@ def calculations(texts):
 
 def remove_extras(freqs):
     verblines = open("verbs.txt").readlines()
-    for verb in verblines:
-        verb = verb[:len(verb)-1]
-        if verb in freqs:
-            del freqs[verb]
+    for verbb in verblines:
+        verbb = verbb[:len(verbb)-1]
+        if verbb in freqs:
+            del freqs[verbb]
+        try:
+            pastt = en.verb.past(verbb)
+            if pastt in freqs:
+                del freqs[pastt]
+        except:
+            pass
     otherlines = open("thingList.txt").readlines()
     for other in otherlines:
         other = other[:len(other)-1]
@@ -100,7 +107,7 @@ def remove_extras(freqs):
             del freqs[other]
     namelines = open("names.txt").readlines()
     for nameish in namelines:
-        name = nameish.split()[0]
+        name = nameish.split(',')[0].lower()
         if name in freqs:
             del freqs[name]
     return freqs
