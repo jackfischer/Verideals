@@ -73,7 +73,7 @@ def calc_freqs(words, eng_words):
             freqs[word] = float(words[word]) - float(eng_words[word])
     return freqs
 
-def calculations(texts):
+def brand_calcs(texts):
     brandsfile = open("brands.txt")
     brands = brandsfile.readlines()
     used = {}
@@ -86,14 +86,12 @@ def calculations(texts):
                     used[brand[1:]] += 1
                 else:
                     used[brand[1:]] = 1
-    print used
+    return used
 
 def remove_extras(freqs):
     verblines = open("verbs.txt").readlines()
     for verbb in verblines:
         verbb = verbb[:len(verbb)-1]
-        if verbb == "sit":
-            print verbb + "sdkjfbsdjkgjsdgkhsdj"
         if verbb in freqs:
             del freqs[verbb]
         try:
