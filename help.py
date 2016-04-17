@@ -3,6 +3,7 @@ import numpy as np
 import en
 from matplotlib import pyplot as plt
 import string
+import slickdeals
 
 def remove_paren():
     brands_file = open("oldbrands.txt")
@@ -133,7 +134,7 @@ def getFreqy():
         w = final[i]
         wordsOnly.append(w[0])
         numsOnly.append(w[1])
-    
+
     fig = plt.plot()
     w= .75
     ind = np.arange(r)
@@ -152,8 +153,11 @@ def getBrands():
     brandNames = []
     brandFreqs = []
     for i in range(len(brands) - r,len(brands)):
-        brandNames.append(str(brands[i][0]))
-        brandFreqs.append(brands[i][1])
+        try:
+            brandNames.append(str(brands[i][0]))
+            brandFreqs.append(brands[i][1])
+        except:
+            print brands[i][0]
 
     fig = plt.plot()
     w =.75
@@ -161,6 +165,16 @@ def getBrands():
     plt.bar(ind, brandFreqs, width=w)
     plt.xticks(ind + w / 2, brandNames, rotation='vertical')
     plt.show()
+
+brands = brand_calcs(count_words(tfios()))
+d = slickdeals.SlickObj()
+d.update()
+d.top(x=100, days=30)
+for brand in brands:
+    try:
+        d.search(brand)
+    except:
+        pass
 
 #getFreqy()
 getBrands()
