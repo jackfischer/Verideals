@@ -92,14 +92,22 @@ def remove_extras(freqs):
     verblines = open("verbs.txt").readlines()
     for verbb in verblines:
         verbb = verbb[:len(verbb)-1]
+        if verbb == "sit":
+            print verbb + "sdkjfbsdjkgjsdgkhsdj"
         if verbb in freqs:
             del freqs[verbb]
         try:
             pastt = en.verb.past(verbb)
+            print pastt
             if pastt in freqs:
                 del freqs[pastt]
         except:
             pass
+    adjlines = open("adjs.txt").readlines()
+    for adj in adjlines:
+        adj = adj[:len(adj)-1]
+        if adj in freqs:
+            del freqs[adj]
     otherlines = open("thingList.txt").readlines()
     for other in otherlines:
         other = other[:len(other)-1]
