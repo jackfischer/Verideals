@@ -17,3 +17,29 @@ def fun():
         brand = brand[0:len(brand)-1]
         if brand in prac:
             print brand
+
+def tfios():
+    tfiosfile = open("tfios.txt")
+    lines = tfiosfile.readlines()
+    return lines
+
+def calculations(texts):
+    brandsfile = open("brands.txt")
+    brands = brandsfile.readlines()
+    used = {}
+    for brand in brands:
+        brand = " " + brand[0:len(brand)-1]
+        for text in texts:
+            text = text.lower()
+            if brand in (" " + text):
+                if brand[1:] in used:
+                    used[brand[1:]] += 1
+                else:
+                    used[brand[1:]] = 1
+    print used
+
+calculations(tfios())
+
+#calculations([
+    #"hey ethan do you like cars", "yes my favorite is a ford", "cool. i saw this show on abc the other day", "that's good, did you see it at walmart", "no, i saw it at ford", "cool", "hey do you like ford", "ford is good yeah"
+#])
