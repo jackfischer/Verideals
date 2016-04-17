@@ -117,10 +117,17 @@ def remove_extras(freqs):
         name = nameish.split(',')[0].lower()
         if name in freqs:
             del freqs[name]
+    for word in freqs.keys():
+        try:
+            plur = en.noun.plural(word)
+            if plur != word and plur in freqs:
+                freqs[word] = freqs[word] + freqs[plur]
+                del freqs[plur]
+        except:
+            print "oh boy"
     return freqs
 
-def getFreqy():
-    lines = tfios()
+def getFreqy(lines=tfios()):
     words = count_words(lines)
     freqs = do_freqs(words)
     litfreqs = calc_freqs(freqs, getEngFreq())
@@ -142,8 +149,8 @@ def getFreqy():
     plt.xticks(ind + w / 2, wordsOnly, rotation='vertical')
     plt.show()
 
-def getBrands():
-    brands = brand_calcs(count_words(tfios()))
+def getBrands(words=count_words(tfios())):
+    brands = brand_calcs(words)
     r = -1
     if len(brands) > 20:
         r = 20
@@ -160,12 +167,13 @@ def getBrands():
             print brands[i][0]
 
     fig = plt.plot()
-    w =.75
+    w = .75
     ind = np.arange(r)
     plt.bar(ind, brandFreqs, width=w)
     plt.xticks(ind + w / 2, brandNames, rotation='vertical')
     plt.show()
 
+'''
 brands = brand_calcs(count_words(tfios()))
 d = slickdeals.SlickObj()
 d.update()
@@ -175,6 +183,9 @@ for brand in brands:
         d.search(brand)
     except:
         pass
+        '''
 
-#getFreqy()
-getBrands()
+
+getFreqy()
+#getBrands()
+#getBrands(words=count_words(array of texts))
