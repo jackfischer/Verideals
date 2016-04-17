@@ -184,7 +184,7 @@ def ebaydeals():
     #getBrands(words=count_words(texts))
     brands = brand_calcs(texts)
     brands = sorted(brands.items(), key=operator.itemgetter(1))
-    ebaydeals = {}
+    ebaydeals = []
     for x in range(len(brands)-5 ,len(brands)):
         jsonebay = ebay.deals(brands[x][0])
         '''
@@ -194,7 +194,7 @@ def ebaydeals():
         '''
         dict = {}
         dict['title'] = jsonebay['searchResult']['item'][0]['title']
-        dict['url'] jsonebay['searchResult']['item'][0]['viewItemURL']
+        dict['url'] = jsonebay['searchResult']['item'][0]['viewItemURL']
         dict['price'] = jsonebay['searchResult']['item'][0]['sellingStatus']['convertedCurrentPrice']['value']
         dict['image_url'] = jsonebay['searchResult']['item'][0]['galleryURL']
         ebaydeals.append(dict)

@@ -1,5 +1,6 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 import requests, secrets
+import help
 app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
@@ -19,6 +20,7 @@ def hello():
 
 @app.route("/verideals/")
 def verideals():
-    return render_template("index.html")
+    ebaydeals = help.ebaydeals()
+    return render_template("index.html", ebaydeals=ebaydeals)
 
 app.run(host='0.0.0.0', debug=True)
