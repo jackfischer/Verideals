@@ -97,15 +97,15 @@ final = sorted(litfreqs.items(), key=operator.itemgetter(1))
 
 wordsOnly = []
 numsOnly = []
-for i in range(len(final)-10,len(final)):
+r = 20
+for i in range(len(final)-r,len(final)):
     w = final[i]
     wordsOnly.append(w[0])
     numsOnly.append(w[1])
 
 fig = plt.plot()
 w= .75
-ind = np.arange(10)
+ind = np.arange(r)
 plt.bar(ind, numsOnly, width=w)
-plt.xticks(ind + w / 2, wordsOnly)
-
+plt.xticks(ind + w / 2, wordsOnly, rotation='vertical')
 plt.show()
