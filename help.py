@@ -175,26 +175,27 @@ def getBrands(words=count_words(tfios())):
     plt.show()
 
 
-textfile = open("texts.txt")
-texts = textfile.readlines()
-#getFreqy(texts)
-#getBrands(words=count_words(texts))
-brands = brand_calcs(texts)
-brands = sorted(brands.items(), key=operator.itemgetter(1))
+
 
 def ebaydeals():
+    textfile = open("texts.txt")
+    texts = textfile.readlines()
+    #getFreqy(texts)
+    #getBrands(words=count_words(texts))
+    brands = brand_calcs(texts)
+    brands = sorted(brands.items(), key=operator.itemgetter(1))
+    ebaydeals = {}
     for x in range(len(brands)-5 ,len(brands)):
         jsonebay = ebay.deals(brands[x][0])
+        '''
         for item in jsonebay['searchResult']['item']:
             print item
             print ""
         '''
-        print jsonebay['searchResult']['item'][0]['title']
-        print jsonebay['searchResult']['item'][0]['viewItemURL']
-        print jsonebay['searchResult']['item'][0]['convertedCurrentPrice']['value']
-        print jsonebay['searchResult']['item'][0]['galleryURL']
-        '''
-        #for search in jsonebay['searchResult']:
-        #    print search
-
-ebaydeals()
+        dict = {}
+        dict['title'] = jsonebay['searchResult']['item'][0]['title']
+        dict['url'] jsonebay['searchResult']['item'][0]['viewItemURL']
+        dict['price'] = jsonebay['searchResult']['item'][0]['sellingStatus']['convertedCurrentPrice']['value']
+        dict['image_url'] = jsonebay['searchResult']['item'][0]['galleryURL']
+        ebaydeals.append(dict)
+    return ebaydeals
