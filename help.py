@@ -1,4 +1,6 @@
 import operator
+import numpy as np
+from matplotlib import pyplot as plt
 import string
 
 def remove_paren():
@@ -90,11 +92,20 @@ words = count_words(lines)
 freqs = do_freqs(words)
 litfreqs = calc_freqs(freqs, getEngFreq())
 final = sorted(litfreqs.items(), key=operator.itemgetter(1))
-for tup in final:
-    print str(tup[0]) + " " + str(tup[1])
+#for tup in final:
+    #print str(tup[0]) + " " + str(tup[1])
 
-#calculations(tfios())
+wordsOnly = []
+numsOnly = []
+for i in range(len(final)-10,len(final)):
+    w = final[i]
+    wordsOnly.append(w[0])
+    numsOnly.append(w[1])
 
-#calculations([
-    #"hey ethan do you like cars", "yes my favorite is a ford", "cool. i saw this show on abc the other day", "that's good, did you see it at walmart", "no, i saw it at ford", "cool", "hey do you like ford", "ford is good yeah"
-#])
+fig = plt.plot()
+w= .75
+ind = np.arange(10)
+plt.bar(ind, numsOnly, width=w)
+plt.xticks(ind + w / 2, wordsOnly)
+
+plt.show()
