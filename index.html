@@ -6,23 +6,24 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row graphs">
             <div class="col-md-4 col-md-offset-2">
-                <!-- describe png -->
+                <!-- png of graph -->
             </div>
             <div class="col-md-4">
                 <!-- png of graph -->
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2">
-                <!-- png of graph -->
-            </div>
-            <div class="col-md-4">
-                <!-- describe png -->
-            </div>
-        </div>
-        <div class="row deals">
+        <div class="row ebay">
+            {% if ebaydeals %}
+            {% for deal in ebaydeals %}
+                <div class="col-md-2">
+                    <h2><a href="{{ deal.link }}">{{ deal.title }}</a></h2>
+                    <img src="{{ deal.image_url }}">
+                    <h4>{{ deal.price }}</h4>
+                </div>
+            {% endfor %}
+            {% endif %}
         </div>
     </div>
 </body>

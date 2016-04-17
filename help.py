@@ -3,7 +3,8 @@ import numpy as np
 import en
 from matplotlib import pyplot as plt
 import string
-import slickdeals
+import ebay
+import json
 
 def remove_paren():
     brands_file = open("oldbrands.txt")
@@ -173,19 +174,27 @@ def getBrands(words=count_words(tfios())):
     plt.xticks(ind + w / 2, brandNames, rotation='vertical')
     plt.show()
 
-'''
-brands = brand_calcs(count_words(tfios()))
-d = slickdeals.SlickObj()
-d.update()
-d.top(x=100, days=30)
-for brand in brands:
-    try:
-        d.search(brand)
-    except:
-        pass
+
+textfile = open("texts.txt")
+texts = textfile.readlines()
+#getFreqy(texts)
+#getBrands(words=count_words(texts))
+brands = brand_calcs(texts)
+brands = sorted(brands.items(), key=operator.itemgetter(1))
+
+def ebaydeals():
+    for x in range(len(brands)-5 ,len(brands)):
+        jsonebay = ebay.deals(brands[x][0])
+        for item in jsonebay['searchResult']['item']:
+            print item
+            print ""
         '''
+        print jsonebay['searchResult']['item'][0]['title']
+        print jsonebay['searchResult']['item'][0]['viewItemURL']
+        print jsonebay['searchResult']['item'][0]['convertedCurrentPrice']['value']
+        print jsonebay['searchResult']['item'][0]['galleryURL']
+        '''
+        #for search in jsonebay['searchResult']:
+        #    print search
 
-
-getFreqy()
-#getBrands()
-#getBrands(words=count_words(array of texts))
+ebaydeals()
