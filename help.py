@@ -23,6 +23,19 @@ def tfios():
     lines = tfiosfile.readlines()
     return lines
 
+def count_words(texts):
+    words = {}
+    for text in texts:
+        textWords = text.split()
+        for word in textWords:
+            if word in words:
+                words[word] += 1
+            else:
+                words[word] = 1
+    return words
+
+count_words(tfios())
+
 def calculations(texts):
     brandsfile = open("brands.txt")
     brands = brandsfile.readlines()
@@ -38,8 +51,16 @@ def calculations(texts):
                     used[brand[1:]] = 1
     print used
 
-calculations(tfios())
+#calculations(tfios())
 
 #calculations([
     #"hey ethan do you like cars", "yes my favorite is a ford", "cool. i saw this show on abc the other day", "that's good, did you see it at walmart", "no, i saw it at ford", "cool", "hey do you like ford", "ford is good yeah"
 #])
+
+
+def shortFreq():
+    old = open("enFreq.txt")
+    new = open("freq.txt", "a")
+    freqs = old.readlines()
+    for x in range(0, 50000):
+        new.write(freqs[x])
