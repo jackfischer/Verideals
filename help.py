@@ -39,7 +39,7 @@ def fun():
             print brand
 
 def tfios():
-    tfiosfile = open("tfios.txt")
+    tfiosfile = open("hp2.txt")
     lines = tfiosfile.readlines()
     return lines
 
