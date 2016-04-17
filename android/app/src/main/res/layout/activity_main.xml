@@ -12,21 +12,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Welcome to Verideals! To start, connect your Verizon Cloud account below."
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Connect to My Verizon"
         android:id="@+id/vzbutton"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/writebutton"
         android:layout_centerHorizontal="true" />
 
+    <!--
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="tokbutton"
         android:id="@+id/tokbutton"
-        android:layout_below="@+id/vzbutton"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignStart="@+id/writebutton" />
+        -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export SMS"
+        android:id="@+id/writebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:src="@drawable/verideals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
