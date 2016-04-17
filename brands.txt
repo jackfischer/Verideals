@@ -54,7 +54,6 @@ aldi
 aleve
 alexander keith's brewery
 alka-seltzer
-all
 all star
 allegra
 allianz
@@ -64,9 +63,8 @@ almay
 almond joy
 altimaaltoids
 altria
-always
 amana
-amazon.com
+amazon
 ambien
 america online
 american airlines
@@ -116,7 +114,6 @@ avengeraveoavia
 aviatoravis
 avon
 axa
-axe
 baby bjorn
 baby ruth
 babygap
@@ -156,7 +153,6 @@ bebe
 beck’s
 bed head
 bed, bath & beyond
-beetle
 bell atlantic
 bellsouth
 ben & jerry’s
@@ -199,7 +195,6 @@ bombardier
 bonanza
 bonne bell
 book it!boost mobile
-boots
 boppy
 borders
 bosch
@@ -228,7 +223,6 @@ bubble yum
 bubblicious
 buckle, inc.
 bud light
-budget
 budweiser
 buffalo wild wings
 bugles
@@ -268,7 +262,6 @@ captain morgan
 caravancardinal health
 carebear
 carefree
-caress
 carfax
 cargill
 carl’s jr.
@@ -298,8 +291,6 @@ chanel
 chapstick
 charles schwab
 charmin
-chase
-cheer
 cheerios
 cheesecake factory
 cheetos
@@ -337,9 +328,7 @@ clearly canadian
 clif bar
 clinique
 clorox
-clue
 cnn
-coach
 cobaltcoca-cola
 cocoa krispies
 cocoa puffs
@@ -393,18 +382,15 @@ crunch ‘n munch
 crystal light
 cub foods
 cummins
-curves
 cvs
 cyber-shotdaewoo
 daffy duck
 dairy queen
-daisy
 dakotadanone
 darden
 dasani
 dave & busters
 david’s bridal
-dawn
 dayquil
 days inn
 debeers
@@ -423,11 +409,9 @@ devry
 dewalt
 dhl
 diageo
-dial
 diaper genie
 dick’s sporting goods
 dickies
-diesel
 diet coke
 diet pepsi
 digiorno
@@ -437,7 +421,6 @@ dior
 directtv
 dirt devil
 discount tire
-discover
 discovery air
 discovery channel
 dish network
@@ -446,7 +429,6 @@ dixie
 dkny
 doc martin
 dockers
-dodge
 dog chow
 dolby surround
 dolce & gabbana
@@ -460,7 +442,6 @@ don de dieu
 doritos
 doublemint
 doubletree
-dove
 dow chemical
 downy
 dr pepper
@@ -504,11 +485,9 @@ empire state building
 enbridge
 encana
 energizer
-ensure
 enterprise rent-a-car
 envoyeosepcot
 epson
-equal
 equinoxescaladeescapeespirit
 espn
 estee lauder
@@ -568,7 +547,6 @@ forenzaformula 409
 forresterfortefortwofossil
 foster’s
 four loko
-fox
 freddie mac
 freecreditreport.com
 freestylefrench’s
@@ -586,7 +564,6 @@ fudge shoppe
 fuji film
 funyuns
 fusionfxg6galantgame boy
-gap
 gardetto’s
 garmin
 garnier
@@ -602,7 +579,6 @@ gerber
 giant eagle
 gillette
 giorgio armani
-glad
 glade
 glaxosmithkline
 gm
@@ -637,7 +613,6 @@ h2haagen-dazs
 hacky sack
 haier
 hallmark
-halls
 hamburger helper
 hampton inn
 hanes
@@ -655,7 +630,6 @@ hbo
 head & shoulders
 healthy choice
 heath
-hefty
 heineken
 heinz
 helene curtis
@@ -719,7 +693,6 @@ inco rogers communications empire
 instyle
 infiniti
 infosys
-ing
 inspirationintel
 international paper
 intuitioninvisalign
@@ -751,7 +724,6 @@ jetblue
 jettajiffy
 jim beam
 jimmy dean
-jockey
 joe’s crab shack
 john deere
 john frida
@@ -837,8 +809,6 @@ libertyliberty medical
 liberty mutual
 life savers
 life time fitness
-limited
-lincoln
 lincoln logs
 linens ‘n things
 lipitor
@@ -858,7 +828,6 @@ looney tunes
 louis vuitton
 lowe’s
 lubriderm
-lucky
 lucky charms
 lucky lager
 lufthansa airlines
@@ -888,12 +857,10 @@ malibumanchester united
 manwich
 manulife financial
 mapquest
-marathon
 marinermark's
 marlboro
 marmot
 marriott
-mars
 marshall fields
 marshalls
 martha stewart living
@@ -1022,7 +989,6 @@ nine west
 nintendo
 nissan
 nivea
-no name
 nokia
 nordictrack
 nordstrom
@@ -1095,10 +1061,8 @@ paper mate
 paramount
 parker hannifin
 passatpatagonia
-patron
 paul mitchell
 pavilionpaxil
-payday
 payless shoe source
 pbs
 pearlpearl vision
@@ -1188,7 +1152,6 @@ prudential
 publishers clearing house
 publix
 puffs
-pull-ups
 puma
 pur
 purell
@@ -1247,7 +1210,6 @@ ricola
 right guard
 rimmel
 rio tinto alcan
-rit
 ritalin
 rite aid
 ritz
@@ -1290,9 +1252,7 @@ sandman hotels
 sanofi-aventis
 santander
 sante fesanyo
-sap
 sara lee
-saturn
 save-on-foods
 schick
 scholastic
@@ -1302,10 +1262,8 @@ schwinn
 science diet
 scion
 scooter store
-scotch
 scotch-brite
 scotchgard
-scott
 scottrade
 scrabble
 scrubbing bubbles
@@ -1324,10 +1282,8 @@ sequoiaserta
 sesame street
 seven seasshake ‘n bake
 shane co.
-sharp
 sharper image
 sharpie
-shell
 shell canada
 sheraton
 sherlock holmes
@@ -1335,7 +1291,6 @@ sherwin-williams
 shopnbc
 shop rite
 shopko
-shout
 siemens
 siennasiera mist
 sierrasilly putty
@@ -1355,7 +1310,6 @@ slinky
 slkslumberland
 slurpee
 smacks
-smart
 smart ones
 smart start
 smarties
@@ -1389,13 +1343,11 @@ sportagesportmart
 sports authority
 sports illustrated
 spray ‘n wash
-sprint
 sprite
 squirt
 srxst. ive’s
 stain stick
 stairmaster
-stanley
 stanley black & decker
 stanley steemer
 staples
@@ -1414,7 +1366,6 @@ stri-dex
 stride
 stssuave
 subaru
-subway
 sucrets
 sudafed
 sun chips
@@ -1431,7 +1382,6 @@ super soaker
 superamerica
 supertest petroleum
 supervalu
-sure
 suzuki
 swanson
 swedish fish
@@ -1480,13 +1430,11 @@ thomson
 thomson reuters
 ti-nspiretic tac
 ticketmaster
-tide
 tidy cats
 tiffany & co.
 tilex
 tim hortons
 timberland
-time
 time warner
 timex
 titantivo
@@ -1652,7 +1600,8 @@ x-men
 xandros
 xbox
 xcel energy
-xc90xerox
+xc90
+xerox
 xhilaration
 xm radio
 xterraxypex
@@ -1665,7 +1614,6 @@ yellow pages
 yellow tail
 yoo-hoo
 yoplait
-york
 youtube
 yukon
 yum brands
