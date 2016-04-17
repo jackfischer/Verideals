@@ -11,7 +11,7 @@
 7up
 84 lumber
 8th continent soymilk
-9-39-59 livesa&e
+9-39-59 live safe
 a1 steak sauce
 a4a6aaa
 aadvantage
@@ -100,7 +100,7 @@ armol all
 art institute international
 ashley furniture
 aspirinastra zeneca
-at&t
+att
 atari
 atkins
 audi
@@ -615,7 +615,7 @@ hamburger helper
 hampton inn
 hanes
 hannah montana
-hard rock café
+hard rock cafe
 hardee’s
 harley-davidson
 harris teeter
@@ -755,7 +755,7 @@ kenneth cole
 kfc
 kia
 kibbles ‘n bits
-kids “r” us
+kids r us
 kimberly-clark
 king snedley's beer
 kiss my face
@@ -1232,7 +1232,7 @@ rubbermaid
 ruby tuesday
 ruffles
 russel stover
-rx330s40saab
+saab
 safe auto insurance
 safeway
 saks fifth avenue
@@ -1443,7 +1443,7 @@ totaltotaltotino’s
 town & countrytown cartown house
 toy story
 toyota
-toys “r” us
+toys r us
 toz rum
 tracfone
 trader joe’s
@@ -1582,7 +1582,6 @@ wrangler
 wranglerwrigley’s
 wrxwwe
 wyeth
-x5x6xfx-acto
 x-factorx-files
 x-men
 xandros
