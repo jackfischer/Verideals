@@ -16,8 +16,9 @@ def hello():
 
   r = requests.post(base, data=payload)
   return r.text
-  
+
+@app.route("/verideals/")
+def verideals():
+    return render_template("index.html")
 
 app.run(host='0.0.0.0', debug=True)
-
-
