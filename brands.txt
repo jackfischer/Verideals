@@ -164,7 +164,6 @@ best buy
 best western
 betty crocker
 bianchi
-bic
 big lots
 big mac
 big rock brewery
@@ -268,7 +267,6 @@ carl’s jr.
 carling
 carling black label
 carmax
-carnation
 carnival cruise lines
 carter’s
 cartier
@@ -658,7 +656,6 @@ honeywell
 hooters
 hoover
 hormel
-hostess
 hot wheels
 hotels.com
 hotmail
@@ -1049,7 +1046,6 @@ pabst
 pac-man
 pace salsa
 pacificapacifico
-palm
 pampers
 panam airlines
 panasonic
@@ -1145,7 +1141,6 @@ procter & gamble
 progressive
 progresso
 project eden
-promise
 propel
 prozac
 prudential
@@ -1153,7 +1148,6 @@ publishers clearing house
 publix
 puffs
 puma
-pur
 purell
 purex
 purina
@@ -1246,7 +1240,6 @@ sam adams
 sam's club
 samsonite
 samsung
-sandals
 sandisk
 sandman hotels
 sanofi-aventis
@@ -1344,7 +1337,6 @@ sports authority
 sports illustrated
 spray ‘n wash
 sprite
-squirt
 srxst. ive’s
 stain stick
 stairmaster
@@ -1399,9 +1391,7 @@ taco bell
 tacomatahiti village
 tahoetake5talbots
 talisman energy
-tang
 tanqueray
-target
 taster’s choice
 taurustbs
 technicolor
@@ -1418,7 +1408,6 @@ texas instruments
 textron
 the buckle
 the north face
-the y
 the yellow pages
 theraflu
 thermacare
@@ -1496,7 +1485,6 @@ u.s. bancorp
 u.s. marines
 u.s. navy
 ubs
-ugg
 ultra brite
 ultra plushuncle ben’s
 under armour
