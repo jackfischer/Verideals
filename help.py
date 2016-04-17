@@ -96,7 +96,7 @@ def remove_extras(freqs):
             del freqs[verbb]
         try:
             pastt = en.verb.past(verbb)
-            print pastt
+            #print pastt
             if pastt in freqs:
                 del freqs[pastt]
         except:
@@ -118,24 +118,49 @@ def remove_extras(freqs):
             del freqs[name]
     return freqs
 
-lines = tfios()
-words = count_words(lines)
-freqs = do_freqs(words)
-litfreqs = calc_freqs(freqs, getEngFreq())
-litfreqs = remove_extras(litfreqs)
-final = sorted(litfreqs.items(), key=operator.itemgetter(1))
+def getFreqy():
+    lines = tfios()
+    words = count_words(lines)
+    freqs = do_freqs(words)
+    litfreqs = calc_freqs(freqs, getEngFreq())
+    litfreqs = remove_extras(litfreqs)
+    final = sorted(litfreqs.items(), key=operator.itemgetter(1))
 
-wordsOnly = []
-numsOnly = []
-r = 20 #num columns
-for i in range(len(final)-r,len(final)):
-    w = final[i]
-    wordsOnly.append(w[0])
-    numsOnly.append(w[1])
+    wordsOnly = []
+    numsOnly = []
+    r = 20 #num columns
+    for i in range(len(final)-r,len(final)):
+        w = final[i]
+        wordsOnly.append(w[0])
+        numsOnly.append(w[1])
+    
+    fig = plt.plot()
+    w= .75
+    ind = np.arange(r)
+    plt.bar(ind, numsOnly, width=w)
+    plt.xticks(ind + w / 2, wordsOnly, rotation='vertical')
+    plt.show()
 
-fig = plt.plot()
-w= .75
-ind = np.arange(r)
-plt.bar(ind, numsOnly, width=w)
-plt.xticks(ind + w / 2, wordsOnly, rotation='vertical')
-plt.show()
+def getBrands():
+    brands = brand_calcs(count_words(tfios()))
+    r = -1
+    if len(brands) > 20:
+        r = 20
+    else:
+        r =len(brands)
+    brands = sorted(brands.items(), key=operator.itemgetter(1))
+    brandNames = []
+    brandFreqs = []
+    for i in range(len(brands) - r,len(brands)):
+        brandNames.append(str(brands[i][0]))
+        brandFreqs.append(brands[i][1])
+
+    fig = plt.plot()
+    w =.75
+    ind = np.arange(r)
+    plt.bar(ind, brandFreqs, width=w)
+    plt.xticks(ind + w / 2, brandNames, rotation='vertical')
+    plt.show()
+
+#getFreqy()
+getBrands()
