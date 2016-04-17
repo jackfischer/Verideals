@@ -39,7 +39,7 @@ def fun():
             print brand
 
 def tfios():
-    tfiosfile = open("hp2.txt")
+    tfiosfile = open("tfios.txt")
     lines = tfiosfile.readlines()
     return lines
 
@@ -87,17 +87,34 @@ def calculations(texts):
                     used[brand[1:]] = 1
     print used
 
+def remove_extras(freqs):
+    verblines = open("verbs.txt").readlines()
+    for verb in verblines:
+        verb = verb[:len(verb)-1]
+        if verb in freqs:
+            del freqs[verb]
+    otherlines = open("thingList.txt").readlines()
+    for other in otherlines:
+        other = other[:len(other)-1]
+        if other in freqs:
+            del freqs[other]
+    namelines = open("names.txt").readlines()
+    for nameish in namelines:
+        name = nameish.split()[0]
+        if name in freqs:
+            del freqs[name]
+    return freqs
+
 lines = tfios()
 words = count_words(lines)
 freqs = do_freqs(words)
 litfreqs = calc_freqs(freqs, getEngFreq())
+litfreqs = remove_extras(litfreqs)
 final = sorted(litfreqs.items(), key=operator.itemgetter(1))
-#for tup in final:
-    #print str(tup[0]) + " " + str(tup[1])
 
 wordsOnly = []
 numsOnly = []
-r = 20
+r = 20 #num columns
 for i in range(len(final)-r,len(final)):
     w = final[i]
     wordsOnly.append(w[0])
