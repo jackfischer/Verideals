@@ -1,6 +1,5 @@
-from flask import Flask, request, render_template
-import requests, secrets
-import help
+from flask import Flask, request
+import requests, json
 app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
@@ -16,11 +15,18 @@ def hello():
       }
 
   r = requests.post(base, data=payload)
-  return r.text
+  print r.text
+  tok = json.loads(r.text)["access_token"]
+  tok = "Bearer " + tok
+  base="https://api.cloudapi.verizon.com/cloud/1/files/VZMOBILE/jj/jjfile.txt"
+  headers = {"Authorization": tok}
+  r = requests.get(base, headers=headers)
+  f = open("messages.txt", "rw+")
+  f.write(r.text)
+  f.close()
+  return "Written!"
+  
 
-@app.route("/verideals/")
-def verideals():
-    ebaydeals = help.ebaydeals()
-    return render_template("index.html", ebaydeals=ebaydeals)
+app.run(host='0.0.0.0', debug=True, threaded=True)
 
-app.run(host='0.0.0.0', debug=True)
+

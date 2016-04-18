@@ -21,7 +21,12 @@ public class UploadVz extends AsyncTask<Integer, Void, Void> {
          //String path = mContext.getFilesDir().toString() + "/" + filename;
          String path = mContext.getFilesDir().toString();
          System.out.println(path);
-         mcloudAPI.uploadFile(mContext, "VZMOBILE/jj/", filename, path);
+         try {
+             mcloudAPI.uploadFile(mContext, "VZMOBILE/jj/", filename, path);
+         } catch (Exception e) {
+
+         }
+
          System.out.println("FINISHED UPLOAD!!!!!!!!!!!");
          return null;
      }
