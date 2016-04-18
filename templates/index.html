@@ -7,19 +7,19 @@
 <body>
     <div class="container-fluid">
         <div class="row graphs">
-            <div class="col-md-4 col-md-offset-2">
-                <!-- png of graph -->
+            <div class="col-md-4 col-md-offset-1">
+                <img style="height: 350px;" src="{{ url_for('static', filename='words.png') }}">
             </div>
-            <div class="col-md-4">
-                <!-- png of graph -->
+            <div class="col-md-4 col-md-offset-1">
+                <img style="height: 350px;" src="{{ url_for('static', filename='brands.png') }}">
             </div>
         </div>
-        <div class="row ebay">
-            <div class="col-md-offset-2 col-md-8">
+        <div style="padding-top: 100px;" class="row ebay">
+            <div class="col-md-8 col-md-offset-2">
             {% if ebaydeals %}
             {% for deal in ebaydeals %}
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <h2><a href="{{ deal.link }}">{{ deal.title }}</a></h2>
                     </div>
                     <div class="col-md-4">
