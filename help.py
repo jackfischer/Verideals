@@ -174,9 +174,6 @@ def getBrands(words=count_words(tfios())):
     plt.xticks(ind + w / 2, brandNames, rotation='vertical')
     plt.show()
 
-
-
-
 def ebaydeals():
     textfile = open("texts.txt")
     texts = textfile.readlines()
